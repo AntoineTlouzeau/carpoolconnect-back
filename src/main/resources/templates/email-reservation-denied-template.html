@@ -1,0 +1,15 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Confirmation d'adresse mail</title>
+    <link th:href="@{http://localhost:8080/carpoolconnect-backend/src/main/resources/styles/button.css}"
+          rel="stylesheet" type="text/css">
+</head>
+<body>
+<p th:inline="text">Bonjour
+    [[${firstName}]] [[${lastName}]]</p>
+<p>Votre réservation concernant le trajet avec [[${driverFirstName}]] [[${driverLastName}]], au départ de [[${departure}]] et à destination de [[${destination}]] le [[${date}]] a malheureusement été refusé.</p>
+<p>Merci de votre compréhension.</p>
+<p>L'équipe UPool</p>
+</body>
+</html>
